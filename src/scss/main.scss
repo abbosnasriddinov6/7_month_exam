@@ -1,0 +1,9 @@
+@import'./global';
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

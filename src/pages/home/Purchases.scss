@@ -1,0 +1,527 @@
+@import'../../scss/main.scss';
+
+.Purchases {
+    width: 100%;
+    height: 700px;
+    // border: $border;
+    background: #F9F9F9;
+
+    // background-color: #18181B;
+    @media only screen and (max-width: 800px) {
+        // margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        // background-color: #18181B;
+        // margin-bottom: 05px;
+
+
+
+    }
+
+    @media only screen and (max-width: 375px) {
+        // margin-top: 100px;
+        width: 100%;
+        height: 800px;
+        // background-color: #18181B;
+        // margin-bottom: 05px;
+        // background-color: #18181B;
+
+
+
+    }
+
+    .container {
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 800px) {
+            // margin-top: 100px;
+            width: 100%;
+            height: 500px;
+            // background-color: #18181B;
+            // margin-bottom: -05px;
+        }
+
+        // border: $border;
+
+        .purchase {
+            display: flex;
+            width: 100%;
+            height: 99.8%;
+
+            @media only screen and (max-width: 375px) {
+                flex-direction: column;
+
+
+
+            }
+
+
+            // border: $border;
+
+            .littlecards {
+                padding: 100px 0;
+                width: 50%;
+                height: 100%;
+
+                // border: $border;
+                @media only screen and (max-width: 800px) {
+                    padding: 35px 20px;
+                    // background-color: #18181B;
+
+
+
+                }
+
+                @media only screen and (max-width: 375px) {
+                    // padding: 0px 10px;
+                    width: 100%;
+                    height: 50%;
+                    margin-top: -50px;
+
+
+
+                }
+
+                h1 {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 55px;
+                    font-weight: 700;
+                    // line-height: 58px;
+                    letter-spacing: 0px;
+                    // text-align: left;
+                    color: #18181B;
+
+                    @media only screen and (max-width: 375px) {
+                        font-size: 30px;
+                        // background-color: #18181B;
+                        // text-align: center;
+
+
+
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        font-size: 30px;
+                        line-height: 38px;
+                    }
+
+                    span {
+                        color: #6C5FBC;
+                    }
+
+                }
+
+                .display {
+                    margin-top: 50px;
+                    // background-color: #18181B;
+
+                    @media only screen and (max-width: 800px) {
+
+                        // background-color: #18181B;
+                        margin-top: 40px;
+                    }
+
+                    .littlecard1 {
+                        display: flex;
+                        margin-top: 30px;
+                        width: 350px;
+                        height: 85px;
+                        // border: $border;
+                        background-color: white;
+                        border-radius: 12.04px;
+
+                        @media only screen and (max-width: 800px) {
+                            width: 230px;
+                            height: 55px;
+                            // background-color: #18181B;
+                            margin-top: 15px;
+                        }
+
+
+                        &:hover {
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                            transition: 0.5s;
+                        }
+
+                        .forimg {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40%;
+                            height: 100%;
+
+                            @media only screen and (max-width: 800px) {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                img {
+                                    margin-top: 3px;
+                                    width: 58%;
+                                }
+                            }
+
+
+                            // border: $border;
+
+                        }
+
+                        .fortext {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: center;
+                            width: 35%;
+                            height: 100%;
+
+                            // border: $border;
+
+
+
+                            h4 {
+                                font-family: "Poppins", sans-serif;
+                                font-size: 19px;
+                                font-weight: 600;
+                                line-height: 27px;
+                                letter-spacing: 0px;
+                                color: #323142;
+
+                                @media only screen and (max-width: 800px) {
+                                    font-size: 12px;
+
+                                }
+                            }
+
+                            h5 {
+                                font-family: "Poppins", sans-serif;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 27px;
+                                letter-spacing: 0px;
+                                color: #323142;
+
+                                @media only screen and (max-width: 800px) {
+                                    font-size: 9px;
+                                    margin-top: -5px;
+
+                                }
+
+                            }
+
+                            .cancel {
+                                color: red;
+                            }
+                        }
+
+                        .fortime {
+                            padding: 60px 18px;
+                            width: 25%;
+                            height: 100%;
+
+                            @media only screen and (max-width: 800px) {
+                                // background-color: #18181B;
+
+                                padding: 0px 0px;
+                            }
+
+
+                            p {
+                                font-family: "Poppins", sans-serif;
+                                font-size: 13px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                letter-spacing: 0px;
+                                color: #ACADB9;
+
+                                @media only screen and (max-width: 800px) {
+                                    font-size: 8px;
+                                    margin-top: 35px;
+                                    margin-left: 17px;
+                                    // background-color: #18181B;
+
+
+                                }
+                            }
+                        }
+
+                        .fortimeyes {
+                            padding: 60px 6px;
+                            width: 25%;
+                            height: 100%;
+
+                            @media only screen and (max-width: 800px) {
+                                // background-color: #18181B;
+
+                                padding: 0px 0px;
+                            }
+
+                            p {
+                                font-family: "Poppins", sans-serif;
+                                font-size: 13px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                letter-spacing: 0px;
+                                color: #ACADB9;
+
+                                @media only screen and (max-width: 800px) {
+                                    font-size: 8px;
+                                    margin-top: 35px;
+                                    margin-left: 8px;
+                                    // background-color: #18181B;
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .mediumcards {
+                padding: 100px 167px;
+                width: 50%;
+                height: 100%;
+
+                // border: $border;
+                @media only screen and (max-width: 800px) {
+                    // background-color: #18181B;
+                    padding: 35px 20px;
+                }
+
+                @media only screen and (max-width: 375px) {
+                    width: 100%;
+                    height: 50%;
+                    margin-top: 220px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+
+                }
+
+                .mediumcard {
+                    width: 550px;
+                    height: 470px;
+                    border: 1.57px solid #EDF2F7;
+                    border-radius: 25.13px;
+                    background-color: white;
+
+                    @media only screen and (max-width: 800px) {
+                        width: 350px;
+                        height: 312px;
+                    }
+
+                    // @media only screen and (max-width: 375px) {
+                    //     width: 550px;
+                    //     height: 470px;
+                    // }
+
+
+                    &:hover {
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                        transition: 0.5s;
+                    }
+
+                    .main {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        gap: 65px;
+                        width: 100%;
+                        height: 34%;
+
+                        // border: $border;
+                        @media only screen and (max-width: 800px) {
+                            padding: 30px 30px;
+                        }
+
+
+                        h3 {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 28px;
+                            font-weight: 800;
+                            line-height: 38px;
+                            letter-spacing: 0.3141176700592041px;
+                            color: #1A202C;
+
+                            @media only screen and (max-width: 800px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        select {
+                            background-color: #FAFAFA;
+                            width: 180px;
+                            height: 40px;
+                            border-radius: 8px;
+                            gap: 6.28px;
+                            font-family: "Manrope", sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            letter-spacing: 0.6282353401184082px;
+                            color: #1A202C;
+                            border: none;
+
+                            @media only screen and (max-width: 800px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .beautifulcards {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 30%;
+
+
+                        // border: $border;
+                        @media only screen and (max-width: 800px) {}
+
+                        .beauty {
+                            width: 500px;
+                            height: 130px;
+                            border: 1.57px solid #c9def4;
+                            // border: $border;
+                            border-radius: 12px;
+
+
+
+                            @media only screen and (max-width: 800px) {
+                                width: 290px;
+                                height: 80px;
+                                margin-top: -15px;
+
+
+                            }
+
+                            .expense {
+                                display: flex;
+                                width: 100%;
+                                height: 70%;
+                                // border: $border;
+
+
+                                .icon1 {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 30%;
+                                    height: 100%;
+                                    // border: $border;
+
+
+                                    img {
+                                        width: 50%;
+
+                                        @media only screen and (max-width: 800px) {
+                                            width: 40%;
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+
+                                .usage {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: start;
+                                    justify-content: center;
+                                    width: 40%;
+                                    height: 100%;
+
+
+
+                                    h3 {
+                                        font-family: "Manrope", sans-serif;
+                                        font-size: 19px;
+                                        font-weight: 800;
+                                        line-height: 28px;
+                                        letter-spacing: 0.6282353401184082px;
+                                        color: #1A202C;
+
+                                        @media only screen and (max-width: 800px) {
+                                            font-size: 13px;
+                                            margin-top: 8px;
+                                        }
+                                    }
+
+                                    p {
+                                        font-family: "Manrope", sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 24px;
+                                        letter-spacing: 0.6282353401184082px;
+                                        color: #A0AEC0;
+
+                                        @media only screen and (max-width: 800px) {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+
+                                .dollor {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: end;
+                                    width: 25%;
+                                    height: 100%;
+                                    // border: $border;
+
+                                    h3 {
+                                        font-family: "Manrope", sans-serif;
+                                        font-size: 22px;
+                                        font-weight: 800;
+                                        line-height: 33px;
+                                        letter-spacing: 0.3141176700592041px;
+                                        text-align: right;
+                                        color: #1A202C;
+
+                                        @media only screen and (max-width: 800px) {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .rating {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 78%;
+                                height: 30%;
+
+                                // border: $border;
+                                @media only screen and (max-width: 800px) {
+                                    img {
+                                        width: 75%;
+                                    }
+                                }
+                            }
+
+                            .rating3 {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 68%;
+                                height: 30%;
+
+                                // border: $border;
+                                @media only screen and (max-width: 800px) {
+                                    img {
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

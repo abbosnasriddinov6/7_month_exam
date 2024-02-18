@@ -1,0 +1,274 @@
+@import'../../scss/main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Signin {
+    width: 100%;
+    height: 100vh;
+
+    // border: $border;
+    @media only screen and (max-width: 800px) {
+
+        height: 100vh;
+
+
+    }
+
+
+    .signin {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .signnow {
+
+            width: 50%;
+            height: 100%;
+            // border: $border;
+
+            .llogoo {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                // background-color: black;
+
+                width: 100%;
+                height: 15%;
+                // border: $border;
+
+                img {
+                    margin-left: 50px;
+                    width: 15%;
+                    cursor: pointer;
+
+                    // margin-left: -0px;
+                    @media only screen and (max-width: 800px) {
+
+                        margin-left: 20px;
+                        width: 20%;
+
+
+                    }
+                }
+            }
+
+            .divinp {
+                width: 100%;
+                height: 80%;
+                // border: $border;
+
+                .forinputs {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+                    width: 100%;
+                    height: 90%;
+
+                    // border: $border;
+                    @media only screen and (max-width: 800px) {
+
+                        gap: 30px;
+
+
+                    }
+
+                    h1 {
+                        font-family: "Poppins", sans-serif;
+                        font-size: 35px;
+                        font-weight: 600;
+                        line-height: 44px;
+                        letter-spacing: -0.04em;
+                        text-align: left;
+
+                        @media only screen and (max-width: 800px) {
+
+                            font-size: 30px;
+
+
+                        }
+                    }
+
+                    .email {
+                        padding: 20px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 382.44px;
+                        height: 74.49px;
+                        border-radius: 14.27px;
+                        background-color: #F5F5F5;
+
+                        img {
+                            width: 10%;
+                        }
+
+                        .eyes {
+                            width: 15%;
+                            height: 80%;
+                        }
+
+                        input {
+                            padding: 20px;
+                            width: 322.44px;
+                            height: 74.49px;
+                            border-radius: 14.27px;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 17px;
+                            font-weight: 600;
+                            line-height: 25px;
+                            letter-spacing: 0.07em;
+                            text-align: left;
+                            background-color: #F5F5F5;
+                            outline: none;
+
+                            @media only screen and (max-width: 800px) {
+                                font-size: 14px;
+                                width: 280px;
+                                height: 65px;
+
+
+                            }
+
+                        }
+                    }
+
+
+
+                    button {
+                        width: 382.44px;
+                        height: 74.49px;
+                        border-radius: 15.56px;
+                        background-color: #6C5FBC;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 27px;
+                        letter-spacing: 0.03em;
+                        color: #F3F5F6;
+
+                        &:hover {
+                            color: #606060;
+                            background-color: white;
+                            transition: 0.4s;
+                        }
+
+                        @media only screen and (max-width: 800px) {
+                            width: 280px;
+                            height: 65px;
+                            font-size: 20px;
+
+
+                        }
+                    }
+
+                    h4 {
+                        font-family: "Poppins", sans-serif;
+                        font-size: 19px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        letter-spacing: 0.01em;
+
+                        @media only screen and (max-width: 800px) {
+
+                            font-size: 13px;
+
+
+                        }
+
+                        span {
+                            color: #6C5FBC;
+                            cursor: pointer;
+                        }
+
+
+                    }
+                }
+
+                .forlinkss {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 90%;
+                    height: 10%;
+                    // border: $border;
+
+                    p {
+                        margin-left: 50px;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0.20000000298023224px;
+                        text-align: right;
+                        color: #718096;
+
+                        @media only screen and (max-width: 800px) {
+
+                            font-size: 10px;
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .signnoww {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            // border: $border;
+            background-color: #6C5FBC;
+
+
+            img {
+                width: 75%;
+            }
+
+            h1 {
+                //styleName: Heading/H2;
+                font-family: "Manrope", sans-serif;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 44px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #FFFFFF;
+
+                @media only screen and (max-width: 800px) {
+                    margin-top: 50px;
+                    font-size: 30px;
+
+
+                }
+            }
+
+            p {
+                margin-top: 15px;
+                //styleName: body/medium/medium;
+                font-family: "Manrope", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: center;
+                color: #FFFFFF;
+
+                @media only screen and (max-width: 800px) {
+
+                    font-size: 10px;
+
+
+                }
+            }
+        }
+    }
+
+
+
+
+}
