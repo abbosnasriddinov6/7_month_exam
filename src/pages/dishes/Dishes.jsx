@@ -3,6 +3,7 @@ import './Dishes.scss'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { minus, plus } from '../../assets'
+import DishesCards from './DishesCards'
 const Dishes = () => {
   const [openWord, setOpenWord] = useState(true)
   const [openWords, setOpenWords] = useState(false)
@@ -11,6 +12,7 @@ const Dishes = () => {
   return (
     <>
       <Header />
+      <DishesCards />
       <div className='Dishes'>
         <div className="container">
           <div className="dishes">

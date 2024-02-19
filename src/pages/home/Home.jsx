@@ -7,6 +7,7 @@ import { Hero, Vector4, Vector6, Vector7, Vector8, hero } from '../../assets'
 import Purchases from './Purchases'
 import Customer from './Customer'
 import Footer from '../../components/footer/Footer'
+import FetchProduct1 from './FetchProduct1'
 const Home = () => {
   return (
     <>
@@ -64,6 +65,7 @@ const Home = () => {
         </div>
       </div>
       <Heroo />
+      <FetchProduct1 />
       <Purchases />
       <Customer />
       <Footer />

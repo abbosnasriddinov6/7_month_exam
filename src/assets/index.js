@@ -35,5 +35,6 @@ import profil from './images/profil.svg'
 import email from './images/Email.svg'
 import password from './images/password.svg'
 import groupfood from './images/groupfood.png'
+import add from './images/Add.png'
 
-export { logo, shop, bar, hero, Hero, Vector4, Vector7, Vector6, Vector8, tel, arrow, maskgroup, star, bookmark, food1, food2, food3, rating1, rating2, icon1, icon2, patch, picture, stars, divider, mask, food22, instagram, inn, facebook, twitter, plus, groupfood, password, email, profil, minus }
+export { logo, shop, bar, hero, Hero, Vector4, Vector7, Vector6, Vector8, tel, arrow, maskgroup, star, bookmark, food1, food2, food3, rating1, rating2, icon1, icon2, patch, picture, stars, divider, mask, food22, instagram, inn, facebook, twitter, plus, groupfood, password, email, profil, minus, add }
