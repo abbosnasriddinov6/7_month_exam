@@ -10,13 +10,13 @@ const Header = () => {
         <div className="nav-items">
           <div className='left'>
             <img className='logo' src={logo} alt="" />
-            <NavLink to='/'><h3>Home</h3></NavLink>
+            <NavLink to='/home'><h3>Home</h3></NavLink>
             <NavLink to='/dishes'><h3>Dishes</h3></NavLink>
           </div>
           <div className="right">
             <NavLink className="basket" to='/shop'><img src={shop} alt="" /></NavLink>
             <button className='button1'><NavLink to='/signin'>Login</NavLink></button>
-            <button className='button2'><NavLink to='/signup'>Sign Up</NavLink></button>
+            <button className='button2'><NavLink to='/'>Sign Up</NavLink></button>
             <img className='hamburger' src={bar} alt="" />
           </div>
         </div>

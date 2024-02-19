@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './FetchProduct1.scss'
 import useProduct1 from '../../app/useProduct'
 import { add, star, stars } from '../../assets';
+import Loader from '../../components/loader/Loader';
 const FetchProduct1 = () => {
   const { loading, product1, error, getProducts } =
     useProduct1();
@@ -18,7 +19,7 @@ const FetchProduct1 = () => {
             <h1>Our Top <span>Dishes</span></h1>
           </div>
           <div className='fetchnow'>
-            {loading ? <h1>Loading...</h1> : null}
+            {loading ? <h1><Loader/></h1> : null}
             {error ? <h1>{error}</h1> : null}
             {product1.length > 0 ? (
               <ul>

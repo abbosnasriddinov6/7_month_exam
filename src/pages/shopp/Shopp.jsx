@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import './Shopp.scss'
-import { food22 } from '../../assets'
-const Shopp = () => {
+import { food22, minuss, pluss } from '../../assets'
+import usenew from '../../app/usenew'
+import Loader from '../../components/loader/Loader'
+import { NavLink, Navigate } from 'react-router-dom'
+const Shopp = ({users}) => {
+ 
+    const { product3, getnewproducts, error, loading } = usenew()
+    useEffect(() => {
+        getnewproducts()
+    }, [product3])
+    if (!users) {
+        return <Navigate to="/" replace />;
+        console.log(users);
+    }
     return (
         <>
             <Header />
@@ -11,7 +23,33 @@ const Shopp = () => {
                 <div className="container">
                     <div className='abbos'>
                         <div className="shop">
-                            <div className='hell1'></div>
+                            <div className='hell1'>
+                                <ul>
+                                    {product3.map((products) => (
+                                        <li key={products.id}>
+
+                                            <div className='img2'>
+                                                <img src={products.image2} alt="" />
+                                            </div>
+                                            <div className='others'>
+                                                <h2>{products.name}</h2>
+                                                <h2>{products.dollor}</h2>
+
+                                            </div>
+                                            <div className='katta'>
+                                                <div className='minusandplus'>
+                                                    <img src={minuss} alt="" />
+                                                    <p>03</p>
+                                                    <img src={pluss} alt="" />
+                                                </div>
+                                                <div className='dolors'>
+                                                    <h3>$38.97</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                             <div className='hell2'>
                                 <div className='payment'>
                                     <div className='subtal'>

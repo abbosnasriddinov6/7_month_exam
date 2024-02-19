@@ -1,22 +1,21 @@
 import axios from 'axios';
 import { create } from 'zustand';
 
-const useProduct1 = create((set) => ({
+export const usenew = create((set) => ({
     loading: false,
-    product1: [],
-    product2: [],
-
+    product3: [],
     error: null,
 
-    getProducts: async () => {
+    getnewproducts: async () => {
         set(() => ({
             loading: true,
         }));
         try {
-            const res = await axios.get('http://localhost:3000/Product1');
+
+            const res = await axios.get('http://localhost:3000/products3');
             const data = await res.data;
             set(() => ({
-                product1: data,
+                product3: data,
             }));
         } catch (err) {
             set(() => ({
@@ -28,16 +27,13 @@ const useProduct1 = create((set) => ({
             }));
         }
     },
-    getProducts2: async () => {
+    post: async (newproduct) => {
         set(() => ({
             loading: true,
         }));
         try {
-            const res = await axios.get('http://localhost:3000/Product2');
-            const data = await res.data;
-            set(() => ({
-                product2: data,
-            }));
+            console.log(newproduct);
+            const res = await axios.post('http://localhost:3000/products3', newproduct);
         } catch (err) {
             set(() => ({
                 error: err.message,
@@ -52,4 +48,4 @@ const useProduct1 = create((set) => ({
 
 }));
 
-export default useProduct1;
+export default usenew;

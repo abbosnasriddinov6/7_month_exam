@@ -4,15 +4,22 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { minus, plus } from '../../assets'
 import DishesCards from './DishesCards'
-const Dishes = () => {
+import { Navigate } from 'react-router-dom'
+
+const Dishes = ({users}) => {
   const [openWord, setOpenWord] = useState(true)
   const [openWords, setOpenWords] = useState(false)
   const [openit, setOpenIt] = useState(true)
   const [openits, setOpenIts] = useState(true)
+  if (!users) {
+    return <Navigate to="/" replace />;
+    console.log(users);
+  }
   return (
     <>
       <Header />
       <DishesCards />
+      
       <div className='Dishes'>
         <div className="container">
           <div className="dishes">

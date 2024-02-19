@@ -8,7 +8,12 @@ import Purchases from './Purchases'
 import Customer from './Customer'
 import Footer from '../../components/footer/Footer'
 import FetchProduct1 from './FetchProduct1'
-const Home = () => {
+import { Navigate } from 'react-router-dom'
+const Home = ({users}) => {
+  if (!users) {
+    return <Navigate to="/" replace />;
+    console.log(users);
+  }
   return (
     <>
       <Header />

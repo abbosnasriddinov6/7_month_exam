@@ -3,7 +3,9 @@ import './SignIn.scss'
 import { LiaEyeSlashSolid } from "react-icons/lia";
 import { LiaEyeSolid } from "react-icons/lia";
 import { email, groupfood, logo, password, profil } from '../../assets'
-const SignIn = () => {
+import { NavLink } from 'react-router-dom';
+const SignIn = ({users, setUsers}) => {
+
 
   const [openEyes, setOpenEyes] = useState('')
   const [opentext, setOpenText] = useState(true)
@@ -23,14 +25,14 @@ const SignIn = () => {
               </div>
               {opentext ? <div className='email'>
                 <img src={password} alt="" />
-                <input onChange={(e) => openEyes(e.target.value)} type="password" placeholder='PASSWORD...' />
+                <input onChange={(e) => setOpenEyes(e.target.value)  } type="password" placeholder='PASSWORD...' />
                 <LiaEyeSolid onClick={() => setOpenText(!opentext)} className='eyes' />
               </div> : <div className='email'>
                 <img src={password} alt="" />
                 <input onChange={(e) => openEyes(e.target.value)} type="text" placeholder='PASSWORD...' />
                 <LiaEyeSlashSolid onClick={() => setOpenText(!opentext)} className='eyes' />
               </div>}
-              <button>SIGN IN</button>
+              <NavLink to='/home'><button onClick={() => setUsers(openEyes)}>SIGN IN</button></NavLink>
               <h4>Create A New Account? <span>Sign Up</span></h4>
             </div>
             <div className='forlinkss'>
